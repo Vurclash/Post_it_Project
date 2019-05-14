@@ -42,7 +42,7 @@ class NotesController < ApplicationController
 
   private 
 
-  def pages_params
-    params.require(:page).permit(:title, :author, :body)
+  def notes_params
+    params.require(:note).permit(:title, :author, :body)
   end
 end
